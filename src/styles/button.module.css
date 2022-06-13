@@ -1,0 +1,11 @@
+.primary {
+  background: linear-gradient(93.3deg, #FF8B4A 0%, #EF4821 100%);
+  padding: 15px 60px;
+  border-radius: 60px;
+  flex: 0;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}

@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Akkurat;
+    src: url('../assets/fonts/AkkuratStd-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Akkurat;
+    src: url('../assets/fonts/AkkuratStd-Regular.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Akkurat;
+    src: url('../assets/fonts/AkkuratStd-Light.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Akkurat;
+    src: url('../assets/fonts/AkkuratStd-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Akkurat;
+    src: url('../assets/fonts/AkkuratStd-Regular.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    font-family: Akkurat;
+    @apply w-full text-white bg-black;
+  }
+}
+
+@layer components {
+  .hero-heading {
+    @apply mb-2 text-4xl font-bold whitespace-nowrap px-9 tablet:px-0 desktop:text-6xl desktop:mb-4;
+  }
+
+  .hero-lead-text {
+    @apply max-w-lg text-xs tablet:text-base desktop:text-lg desktop:max-w-none px-9 tablet:px-0 mb-9;
+  }
+}
