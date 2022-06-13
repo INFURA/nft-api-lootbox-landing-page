@@ -1,16 +1,13 @@
 import SecondaryButton from './SecondaryButton';
 import ProjectDetail from './ProjectDetail';
-import Video from './Video';
 export interface IProject {
   number: number;
   title: string;
-  videoId: number;
   descriptions: string[];
   language: string;
   timeToComplete: string;
   difficulty: string;
   codeUrl: string;
-  assetsUrl: string;
 }
 
 export interface ProjectProps {
@@ -18,13 +15,6 @@ export interface ProjectProps {
 }
 
 const Project = ({ project }: ProjectProps) => {
-  const handleDownloadCode = () => {
-    console.log(`Downloading [${project.title}] Code...`);
-  };
-
-  const handleDownloadAssets = () => {
-    console.log(`Downloading [${project.title}] Assets...`);
-  };
 
   return (
     <article className="flex flex-col flex-1 content-center align-middle justify-center max-w-xl">
@@ -32,9 +22,6 @@ const Project = ({ project }: ProjectProps) => {
       <h2 className="text-5xl font-thin mt-1 tablet:whitespace-nowrap">
         {project.title}
       </h2>
-      <div className="w-full mt-9">
-        <Video id={project.videoId} />
-      </div>
       <div className="grid grid-cols-4 gap-12">
         <div className="col-span-3 flex flex-col">
           {project.descriptions.map((description, i) => (
@@ -46,22 +33,16 @@ const Project = ({ project }: ProjectProps) => {
             </p>
           ))}
           <div className="mt-[2.25rem] flex">
-            <SecondaryButton
+
+          <a href={project.codeUrl} target="_blank" rel="noreferrer noopener">
+          <SecondaryButton
               showIcon
               icon="download"
-              onClick={handleDownloadCode}
             >
-              Code
+              Github Repository
             </SecondaryButton>
-            <div className="ml-20">
-              <SecondaryButton
-                showIcon
-                icon="download"
-                onClick={handleDownloadAssets}
-              >
-                Assets
-              </SecondaryButton>
-            </div>
+          </a>
+
           </div>
         </div>
         <div className="col-span-2 col-start-4 mt-[2.25rem]">

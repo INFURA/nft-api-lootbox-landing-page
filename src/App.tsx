@@ -21,7 +21,7 @@ function App() {
       <Hero
         title='Earn Rewards'
         descriptions={[
-          'Help us get the word out about the Infura NFT Lootbox and earn rewards!',
+          'Help us get the word out about the Infura NFT API and earn an Infura NFT!',
           ' Are you a blogger, vlogger or social media personality in tech? Complete one of the projects above and share your experience on your blog, twitter or youtube channel and receive an exclusive Infura NFT – not only will it look great in your collection, but it will give you access to exclusive Infura rewards and events in the future.'
         ]}
         image={NFTExample}
