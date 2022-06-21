@@ -8,7 +8,9 @@ Document your developer journey in an article or video and submit your content f
 
 ## Resources
 - [Infura NFT API Swagger docs](https://docs.api.infura.io/nft/)
-- [Infura](https://infura.io)
+- [Infura Web Site](https://infura.io)
+- [Sample Reference App](https://github.com/anataliocs/Infura-NFT-Dashboard)
+- [Truffle Box](https://github.com/truffle-box/nft-api-box)
 
 More resources will be added as they become available.
 
