@@ -4,16 +4,12 @@ export interface HeroProps {
   title: string;
   descriptions: string[];
   image: string;
-  onClick?: () => void;
-  buttonText?: string;
 }
 
 const Hero = ({
   title,
   descriptions,
   image,
-  buttonText,
-  onClick,
 }: HeroProps) => {
   return (
     <section className="container mx-auto mt-36 mb-36 px-14 tablet:px-8 desktop:px-60">
@@ -28,11 +24,6 @@ const Hero = ({
               {description}
             </p>
           ))}
-          {buttonText && onClick && (
-            <div className="mt-14">
-              <PrimaryButton>{buttonText}</PrimaryButton>
-            </div>
-          )}
         </div>
         <div className="flex-1 tablet:ml-24">
           <img src={image} alt={title} />
