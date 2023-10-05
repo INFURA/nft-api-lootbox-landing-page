@@ -44,7 +44,7 @@
   "devDependencies": {
     "@types/vimeo__player": "^2.16.2",
     "autoprefixer": "^10.4.4",
-    "postcss": "^8.4.12",
+    "postcss": "^8.4.31",
     "tailwindcss": "^3.0.23"
   }
 }
